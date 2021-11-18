@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  header {
+    background: black;
+    border-width: 5px;
+    border-color: purple;
+    border-style: solid;
+    color: white;
+  }
+
+  body {
+    background-image: url("https://i.postimg.cc/xd1Y9Rsh/IMG-0431.jpg");
+    background-repeat: no-repeat;
+    backgound-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-style: italic;
+  }
+
+  div {
+    margin: auto;
+    width: 500px;
+  }
+
+  form {
+    display: block;
+    text-align: left;
+    border-style: solid;
+    border-color: black;
+    background-color: rgba(100, 0, 100, .80);
+    color: white;
+    text-shadow: 2 3 4;
+    margin: 30px auto
+  }
+
+  .form-element {
+    padding: .5rem;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #dropdown {
+    width: 125px
+  }
+
+  .feedback {
+    width: 400px;
+    height: 50px;
+  }
+</style>
+
+<header>
+  <h1> Flanders Music Lessons - Student Survey </h1>
+  <p id="description"> Thank you for sharing feedback about your lessons!</p>
+</header>
+
+<body>
+  <div>
+    <form id="survey-form" action="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+      <div class="form-element">
+        <label id="name-label" for="name">Name</label>
+        <input name="name" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-element">
+        <label id="email-label" for="email">Email Address</label>
+        <input name="email" type="email" placeholder="johnsmith@percussion.com" required />
+      </div>
+
+      <div class="form-element">
+        <label id="number" for="number">Phone Number</label>
+        <input type="number" name="number" placeholder="000-000-0000" < />
+      </div>
+
+      <div class="form-element">
+        <label id="dropdown" for="instrument">Which instrument are you studying?</label>
+        <select name="instument">
+          <option value="drumset">Drum Set</option>
+          <option value="marimba">Marimba</option>
+          <option value="timpani">Timpani</option>
+          <option value="piano">Piano</option>
+        </select>
+      </div>
+
+      <div class="form-element">
+        <label id="lesson-type" for="lesson-type">How are you currently taking lessons?</label>
+        <input type="radio" name="lesson-type" checked>In-Person
+        <input type="radio" name="lesson-type">Virtual
+      </div>
+
+      <div class="form-element">
+        <label id="feedback" for="feedback">Additional Feedback</label>
+        <textarea style="vertical-align:top;" class="feedback" placeholder="Enter your Feedback"></textarea>
+      </div>
+
+      <div class="form-element">
+        <button type="Submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
